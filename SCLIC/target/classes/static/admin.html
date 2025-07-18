@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Admin - Laboratorios</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="resources/LABU.png" alt="Logo del Sistema">
+     </div>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Perfil</a>
+        <a href="#">Ayuda</a>
+      </nav>
+    </aside>
+
+    <div class="main-content">
+      <header class="topbar">
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        <input type="text" class="search" placeholder="Buscar">
+        <div class="user">
+          <span class="icon">&#128100;</span>
+          Usuario.Admin
+        </div>
+        <button class="logout">Salir</button>
+      </header>
+
+      <section class="dashboard">
+        <h2>Vista Principal</h2>
+        <div class="modules">
+          <button class="module">Gestión de Equipos</button>
+          <button class="module">Gestión de Mobiliario</button>
+          <button class="module">Planificación de Horario</button>
+          <button class="module">Gestión de Usuarios</button>
+          <button class="module">Reportes Y Fallas</button>
+          <button class="module">...</button>
+        </div>
+
+        <div class="anuncios">
+          <button class="btn">Agregar anuncios</button>
+          <button class="btn">Editar anuncios</button>
+          <button class="btn">Eliminar anuncios</button>
+        </div>
+
+        <div class="vista-anuncio">
+          Vista Anuncio
+        </div>
+
+        <div class="filtro">
+          <button class="filtro-btn">Todos &#9662;</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.querySelector('.sidebar');
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('oculto');
+    });
+  </script>
+</body>
+</html>

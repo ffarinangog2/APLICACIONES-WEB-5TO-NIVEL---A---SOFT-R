@@ -1,0 +1,17 @@
+{
+    "nombre": "clase1",
+    "hobbie": [
+        "tocar la guitarra",
+        "programar"
+    ],
+    "recomendado": {
+        "nombre": "Jane Doe",
+        "hobbie": [
+            "cine",
+            "leer"
+        ],
+        "recomendado": {}
+    }
+}
+
+
